@@ -17,23 +17,22 @@ body {
     background-color: #420FE7
 }
 .content {
-    max-width: 1600px;
+   
     margin: 0 auto;
     box-sizing: border-box
 }
 .intro {
-    width: 100%;
     padding: 0 40px 0 170px;
     box-sizing: border-box
 }
 .intro .tag {
     display: flex;
     align-items: center;
-    animation: anim-text 1000ms cubic-bezier(0, 0.45, 0.15, 1)
+    animation: anim-text 2000ms cubic-bezier(0, 0.45, 0.15, 1)
 }
 .tag svg {
     margin: 0 30px;
-    fill: #574CF2
+    fill: #686DF2
 }
 .intro h1 {
     margin-top: 40px;
@@ -66,12 +65,12 @@ body {
 }
  .anim .shape {
     min-width: 320px;
-    min-height: 400px;
+    min-height: 500px;
     position: absolute
 }
 .intro .anim .shape:before {
     content: "";
-    background-color: #18033C;
+    background-color: #f5234c;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 200px;
@@ -137,11 +136,20 @@ body {
     position: absolute;
     padding-left: 40px;
     box-sizing: border-box
+
 }
   .project-1 {
-    width: 60%;
+    width: 50%;
     animation: anim-text 1200ms cubic-bezier(0, 0.45, 0.15, 1);
-    margin-bottom: 130px
+    margin-bottom: 10px;
+    /* From https://css.glass */
+  /* From https://css.glass */
+background: rgba(4, 4, 4, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.9px);
+-webkit-backdrop-filter: blur(8.9px);
+border: 1px solid rgba(0, 0, 0, 0.1);
 }
  .project-1 .intro-title {
     position: relative
@@ -149,9 +157,9 @@ body {
 .project-1 .intro-title .badge {
     width: 120px;
     height: 120px;
-    background-color: #EEA1BE;
+    background-color: #f5234c;
     border-radius: 200px;
-    color: #F3F2F4;
+    color: #ffff;
     position: absolute;
     font-family: 'Averta', sans-serif;
     display: flex;
@@ -160,7 +168,7 @@ body {
     text-align: center;
     top: 0;
     right: 0;
-    margin: -58px -146px 0 0
+    margin: -90px -100px 0 0
 }
 .project-1 .intro-title .badge .text-default {
     font-size: 22px;
@@ -185,13 +193,19 @@ body {
     transform: scale(0)
 }
  .project-1 .project-img {
-    background-color: #EDF2F8
+    background-color: #EDF2F8;
+    border-radius: 16px 16px 0 0
 }
   .project-0 {
     align-self: flex-end;
     width: 60%;
-    margin: 0px 0 180px 420px;
-    animation: anim-text 1250ms cubic-bezier(0, 0.45, 0.15, 1)
+    margin: 0px 0 60px 300px;
+    background: rgba(4, 4, 4, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
  .project-0 .badge-new {
     position: absolute;
@@ -203,7 +217,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #18033C;
+    background-color: #f5234c;
     font-family: 'Averta', sans-serif;
     display: flex;
     align-items: center;
@@ -211,7 +225,9 @@ body {
     z-index: 10
 }
 .project-0 .project-img {
-    background-color: #EDF2F8
+    background-color: #EDF2F8;
+    border-radius:16px 0px 0px;
+
 }
  .project-2 {
     align-self: flex-end;
@@ -227,25 +243,19 @@ body {
     transition: background-color 400ms
 }
  .project:before {
-    content: '';
+ 
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -10;
-    top: 0;
-    left: 0;
-    outline: 1px solid rgba(87, 76, 242, 0.4);
-    outline-offset: -1px;
-    background: linear-gradient(to bottom right, transparent calc(50% - 1px), rgba(87, 76, 242, 0.4) calc(50% - 1px), rgba(87, 76, 242, 0.4) 50%, transparent 50%), linear-gradient(to bottom left, transparent calc(50% - 1px), rgba(87, 76, 242, 0.4) calc(50% - 1px), rgba(87, 76, 242, 0.4) 50%, transparent 50%)
+   
+
 }
  .project:after {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -5
+  
 }
  a .project-img {
     overflow: hidden;
@@ -260,7 +270,7 @@ a .project-desc {
     box-sizing: border-box
 }
   a .project-desc p {
-    color: #8C85F3
+    color: #ffff
 }
   a .project-desc .project-number {
     color: #8C85F3;
@@ -350,7 +360,7 @@ a:hover .project-view {
     color: #F3F2F4
 }
  p {
-    color: #F3F2F4
+    color: #000
 }
  .informations {
     margin-top: 80px;
@@ -625,7 +635,7 @@ a:hover .project-view {
     .content .home-casestudies .project-1 .intro-title .badge {
         width: 80px;
         height: 80px;
-        margin: -36px -100px 0 0
+        margin-left: 100px;
     }
     .content .home-casestudies .project-1 .intro-title .badge .text-default {
         font-size: 18px
@@ -791,7 +801,7 @@ p {
 }
 .content-about .about-services .resume a:hover {
     background-color: #18033C;
-    color: #F3F2F4;
+    color: #000;
     border: 1px solid #18033C
 }
 .content-about .about-process {
@@ -1070,13 +1080,14 @@ h3 {
 }
 .outline-title {
     font-family: "Averta", sans-serif;
-    font-size: 9vw;
-    line-height: 9.4vw;
+    font-size: 6vw;
+    line-height: 7.4vw;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 1px #CECAE3;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
+ 
 }
 .intro-title {
     font-family: "Averta", sans-serif;
@@ -1105,7 +1116,7 @@ a {
     font-size: 16px
 }
 a:hover {
-    color: #EEA1BE
+    color: #000
 }
 video {
     margin: 0;
@@ -1129,7 +1140,7 @@ button:hover {
 }
 .tag {
     font-family: 'Averta', sans-serif;
-    color: #EEA1BE;
+    color: #ffff;
     font-size: 16px
 }
 .project-line {
@@ -1678,3 +1689,8 @@ footer .comment p {
     transform: translateY(100px);
     transition: transform 800ms cubic-bezier(0, 0.45, 0.15, 1)
 }
+
+.fixed-top-nav {
+    position: sticky;
+    top: 0;
+  }
