@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ScrollToTop from "react-scroll-to-top";
 export const Footer = () => {
   return (
     <footer>
@@ -37,6 +37,9 @@ export const Footer = () => {
       <div className="divider" />
       <p>brianblanquiceth@gmail.com</p>
     </div>
+    <ScrollToTop smooth color="#f5234c" />
+     
+    
   </footer>
   
   )
