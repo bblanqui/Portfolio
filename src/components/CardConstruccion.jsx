@@ -1,20 +1,8 @@
 import React from 'react'
-
-import Tilt from 'react-parallax-tilt';
 export const CardConstruccion = () => {
   return (
-
-       
-  <Tilt className="parallax-effect-glare-scale"
-  tiltMaxAngleX={9}
-  tiltMaxAngleY={9}
-  perspective={10000000}
-  transitionSpeed={10000}
-  scale={1.03}
-  gyroscope={true}
-
-  >
-    <div className='home-casestudies'>
+  
+<div className='home-casestudies'>
  <span className='outline-title'>Estudios Y Proyectos</span>
      <section className="project project-0">
         <a href="https://i.vimeocdn.com/video/761073202-24556e44117039a696c8d9362a04bfea6ea98db5911264bc5e17eba9626dbb89-d_640" target="_blank">
@@ -36,6 +24,6 @@ export const CardConstruccion = () => {
       </section>
     
     </div>
-    </Tilt>
+    
   )
 }
