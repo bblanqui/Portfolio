@@ -83,7 +83,7 @@ export const Footer = () => {
         </a>
         <div className="divider" />
 
-        <p>Realizado en 2023</p>
+        <p>© 2023 Brallan Mosquera</p>
       </div>
       <Toaster
         position="top-center"
