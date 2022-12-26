@@ -79,7 +79,7 @@ export const Footer = () => {
               fill="#FFF"
             />
           </svg>
-          descargar curriculum
+          descargar currículum
         </a>
         <div className="divider" />
 
