@@ -1,24 +1,24 @@
 import React from 'react'
 import { CardConstruccion } from './CardConstruccion'
 import { Cards } from './Cards'
-import Tilt from 'react-parallax-tilt';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { toast, Toaster  } from 'react-hot-toast';
+import Tilt from 'react-parallax-tilt';
 export const Body = () => {
 
 
   return (
 
-       
-  <Tilt className="parallax-effect-glare-scale"
-  tiltMaxAngleX={9}
-  tiltMaxAngleY={9}
-  perspective={10000000}
-  transitionSpeed={10000}
-  scale={1.03}
-  gyroscope={true}
-
-  >
+    <Tilt className="parallax-effect-glare-scale"
+    tiltMaxAngleX={9}
+    tiltMaxAngleY={9}
+    perspective={10000000}
+    transitionSpeed={10000}
+    scale={1.03}
+    gyroscope={true}
+  
+    >
+ 
     <div  className="intro">
         <p class="tag">
                 Soy Brallan Mosquera<svg width="40px" height="1"><path fill-rule="evenodd" d="M0 0h66v4H0z"/></svg> Disponible para trabajo freelance
@@ -41,32 +41,45 @@ export const Body = () => {
       <div className="intro-content">
         <p className="text">Ayudo a empresas a getionar y visualizar sus datos de manera inteligente mediante herramienta de inteligencia de negocios.
         tengo conocimeiento tecnico en sql, go, react, c# y js.</p>
-        <div className="contact">
+        <CopyToClipboard text='brianblanquiceth@gmail.com'>
+        <div className="contact" onClick={()=>{toast.success('correo copiado 😍')}}>
           <div className="icon">
             <svg width={16} height={11} xmlns="http://www.w3.org/2000/svg"><path d="M.254 10.188H15.12V.438H.254v9.75zm2.403-8.635h10.075L7.72 4.923l-5.062-3.37zm-1.287.484l6.352 4.228 6.283-4.222v7.03H1.37V2.037z" fill="#FFFFFF" fillRule="evenodd" /></svg>
           </div>
-        
-          <CopyToClipboard text='brianblanquiceth@gmail.com'>
 
-              <span onClick={()=>{toast('correo copiado 😍', {position: "top-center", style: {
-      minWidth: '200px',
-      marginTop: '50%',
-   
-       
-    } })}} className="mail" data-status="Click para copiar">brianblanquiceth@gmail.com</span>
-              
-
-          </CopyToClipboard>
-         
+              <span  className="mail" data-status="Click para copiar">brianblanquiceth@gmail.com</span>
         </div>
+        </CopyToClipboard>
       </div>
      
      <CardConstruccion />
      <Cards/>
-     <Toaster containerStyle={{ position: 'absolute' }}/>    
-      </div>
+     <Toaster
+            position="top-center"
+            reverseOrder={false}
+            gutter={8}
+            containerClassName=""
+            containerStyle={{}}
+            toastOptions={{
+              className: '',
+              duration: 5000,
+              style: {
+                background: '#363636',
+                color: '#fff',
+              },
+
+              success: {
+                duration: 3000,
+                theme: {
+                  primary: 'green',
+                  secondary: 'black',
+                },
+              },
+            }}
+     />
+   </div>
       
-      </Tilt>
-    
+   
+   </Tilt>
   )
 }

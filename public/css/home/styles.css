@@ -14,7 +14,9 @@
     font-display: swap
 }
 body {
-    background-color: #420FE7
+    background-color: #420FE7;
+  
+    
 }
 .content {
    
@@ -121,7 +123,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+   
     box-sizing: border-box;
     padding: 0 40px 0 130px
 }
@@ -129,27 +131,20 @@ body {
     animation: anim-text 1200ms cubic-bezier(0, 0.45, 0.15, 1);
     margin: 0 0 120px 130px
 }
-.home-casestudies .intro-casestudies {
-    z-index: 10;
-    transform: translate(-130px, -95px);
-    width: 40%;
-    position: absolute;
-    padding-left: 40px;
-    box-sizing: border-box
 
-}
   .project-1 {
-    width: 50%;
+   
+ 
+    width: 45%;
+    margin-left: 39%;
+    border-radius: 16px;
     animation: anim-text 1200ms cubic-bezier(0, 0.45, 0.15, 1);
-    margin-bottom: 10px;
-    /* From https://css.glass */
-  /* From https://css.glass */
-background: rgba(4, 4, 4, 0.26);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.9px);
--webkit-backdrop-filter: blur(8.9px);
-border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(4, 4, 4, 0.26);
+    box-shadow: 0 4px 30px rgba(237, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
  .project-1 .intro-title {
     position: relative
@@ -168,7 +163,9 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     top: 0;
     right: 0;
-    margin: -90px -100px 0 0
+    margin: -70px -380px 0 0
+    
+   
 }
 .project-1 .intro-title .badge .text-default {
     font-size: 22px;
@@ -197,12 +194,12 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 16px 16px 0 0
 }
   .project-0 {
-    align-self: flex-end;
+    
     width: 60%;
-    margin: 0px 0 60px 300px;
+    margin: 0px 0 100px 0px;
     background: rgba(4, 4, 4, 0.26);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(237, 0, 0, 0.1);
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -235,9 +232,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
     animation: anim-text 1250ms cubic-bezier(0, 0.45, 0.15, 1)
 }
 
-  .project {
-    position: relative
-}
+
  .project:hover {
     background-color: rgba(87, 76, 242, 0.4);
     transition: background-color 400ms
@@ -253,8 +248,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
  .project:after {
     content: '';
     position: absolute;
-    height: 100%;
-    width: 100%;
+    
   
 }
  a .project-img {
@@ -267,7 +261,8 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 }
 a .project-desc {
     padding: 40px 40px 80px 80px;
-    box-sizing: border-box
+    box-sizing: border-box;
+
 }
   a .project-desc p {
     color: #ffff
@@ -326,10 +321,11 @@ a .project-desc .project-client {
     transform: translateX(0);
     opacity: 1;
     transition: transform 400ms, opacity 200ms, color 400ms;
-    color: #8C85F3
+    color: #8C85F3;
+    
 }
 a:hover {
-    color: #F3F2F4
+    color: red
 }
   a:hover .project-arrow {
     width: 50px
@@ -678,7 +674,8 @@ a:hover .project-view {
         padding: 0
     }
     .content .home-casestudies .project .project-desc {
-        padding: 20px 20px 40px 40px
+        padding: 20px 20px 40px 40px;
+        
     }
     .content .informations {
         margin-top: 0px;
@@ -1312,13 +1309,18 @@ section:nth-last-child(2) {
         font-size: 4vw
     }
 }
-nav {
+nav  {
     padding: 60px 40px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    z-index: 0;
-    animation: opacity-menu 1200ms
+    animation: opacity-menu 1200ms;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+     
+    
 }
 nav .logo {
     display: flex;
@@ -1430,14 +1432,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    padding: 0 40px 100px 40px;
-    box-sizing: border-box
+    margin-top: 5%;
+    padding: 0 0px 40px 40px;
+   
 }
 footer .divider {
-    height: 40px;
+    height: 20px;
     width: 1px;
-    background-color: #574CF2
+    background-color: red
 }
 footer .social {
     border-bottom: 1px solid #574CF2;
@@ -1456,7 +1458,7 @@ footer .social .social-icon {
 }
 footer .social .social-icon svg {
     margin-right: 14px;
-    fill: #18033C
+  
 }
 footer .icon {
     display: flex;
@@ -1466,9 +1468,7 @@ footer .icon {
 footer .icon:hover {
     cursor: pointer
 }
-footer .icon:hover .plane {
-    animation: anim-plane 2000ms cubic-bezier(0, 0.45, 0.15, 1)
-}
+
 @keyframes anim-plane {
     0% {
         transform: translate(0, 0);
@@ -1487,13 +1487,8 @@ footer .icon:hover .plane {
         opacity: 1
     }
 }
-footer .icon svg {
-    width: 100%
-}
-footer .icon svg .grave {
-    transform-origin: 42% 58%;
-    transform: translate(5px, -5px)
-}
+
+
 footer .icon svg text {
     fill: #574CF2;
     font-size: 16spx;
@@ -1509,9 +1504,7 @@ footer .icon svg text {
         transform: rotate(360deg)
     }
 }
-footer .icon svg:hover .grave {
-    animation: anim-grave 1000ms
-}
+
 @keyframes anim-grave {
     0% {
         transform: scale(1) translate(5px, -5px)
@@ -1542,6 +1535,12 @@ footer .comment p {
     align-items: flex-start;
     color: #CECAE3
 }
+footer .comment a {
+    display: flex;
+    align-items: flex-start;
+    color: #CECAE3
+}
+
 @media (min-width: 320px) and (max-width: 834px) {
     footer {
         margin-top: 20px;
@@ -1694,3 +1693,10 @@ footer .comment p {
     position: sticky;
     top: 0;
   }
+
+  .nueva{
+    color: #fff;
+    cursor: pointer;
+  }
+ 
+  
