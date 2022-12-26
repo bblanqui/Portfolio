@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { toast, Toaster } from "react-hot-toast";
+import Curriculum from '../public/img/CVBrallan.pdf'
 export const Footer = () => {
   return (
     <footer>
@@ -60,7 +61,7 @@ export const Footer = () => {
         </svg>
       </div>
       <div className="comment">
-        <span
+        <a href={Curriculum} download="Curriculum vitae brallan mosquera"
           className="nueva"
           onClick={() => {
             toast.success("Curriculum descargado 🔥");
@@ -79,7 +80,7 @@ export const Footer = () => {
             />
           </svg>
           descargar curriculum
-        </span>
+        </a>
         <div className="divider" />
 
         <p>Realizado en 2023</p>
