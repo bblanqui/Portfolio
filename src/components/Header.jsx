@@ -1,21 +1,13 @@
 import React from 'react'
 
-import Tilt from 'react-parallax-tilt';
+
 
 export const Header = () => {
 
        
   
   return (
-    <Tilt className="parallax-effect-glare-scale"
-  tiltMaxAngleX={9}
-  tiltMaxAngleY={9}
-  perspective={10000000}
-  transitionSpeed={10000}
-  scale={1.03}
-  gyroscope={true}
-
-  >
+  
    <nav className='fixed-top-nav'>
       
         <div className="logo">
@@ -47,7 +39,7 @@ export const Header = () => {
             
        
       </nav>
-      </Tilt>
+    
   
   )
 }

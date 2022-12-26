@@ -3,13 +3,21 @@ import { CardConstruccion } from './CardConstruccion'
 import { Cards } from './Cards'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { toast, Toaster  } from 'react-hot-toast';
-
+import Tilt from 'react-parallax-tilt';
 export const Body = () => {
 
 
   return (
 
-       
+    <Tilt className="parallax-effect-glare-scale"
+    tiltMaxAngleX={9}
+    tiltMaxAngleY={9}
+    perspective={10000000}
+    transitionSpeed={10000}
+    scale={1.03}
+    gyroscope={true}
+  
+    >
  
     <div  className="intro">
         <p class="tag">
@@ -72,6 +80,6 @@ export const Body = () => {
    </div>
       
    
-  
+   </Tilt>
   )
 }
