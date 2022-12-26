@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-
 export const Header = () => {
-
-       
-  
+ 
+ 
+ 
+ 
   return (
   
-   <nav className='fixed-top-nav'>
+   <nav>
       
         <div className="logo">
           <a href="../index.html">

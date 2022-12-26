@@ -1309,13 +1309,18 @@ section:nth-last-child(2) {
         font-size: 4vw
     }
 }
-nav {
+nav  {
     padding: 60px 40px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    z-index: 0;
-    animation: opacity-menu 1200ms
+    animation: opacity-menu 1200ms;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+     
+    
 }
 nav .logo {
     display: flex;
@@ -1693,3 +1698,5 @@ footer .comment a {
     color: #fff;
     cursor: pointer;
   }
+ 
+  
